@@ -1,0 +1,47 @@
+# Git Commit & Collaboration Checklist
+
+## Setup Git Repository
+1. Create a repository on GitHub: `Hospital-Management-System`
+2. Clone it:
+   ```bash
+   git clone https://github.com/yourusername/Hospital-Management-System.git
+   cd Hospital-Management-System
+   ```
+
+## Create and Switch Branches
+```bash
+git checkout -b feature/patient-module
+```
+
+## Commit Regularly
+```bash
+git add .
+git commit -m "Added Patient entity and controller"
+```
+
+## Push Changes
+```bash
+git push origin feature/patient-module
+```
+
+## Create Pull Requests
+- Go to GitHub > Compare & Pull Request
+- Get approval from team lead before merging to main
+
+## Best Practices
+- Use clear, descriptive commit messages
+- Commit often after each meaningful change
+- Use branches for each module (e.g., `feature/billing`, `feature/appointments`)
+- Review each other’s code before merging
+
+## Track Contributions
+Use GitHub insights > Contributors to verify commits per member.
+
+## Project Final Push
+```bash
+git checkout main
+git merge feature/all
+git push origin main
+```
+
+Ready for submission!
